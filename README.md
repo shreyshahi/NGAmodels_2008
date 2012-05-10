@@ -13,6 +13,15 @@ Copy the contents of the package in a folder and add that folder to MATLAB path.
 Use
 ===
 
+See individual ground-motion model scripts to find the input and output specification for each function. The ground-motion model scripts automatically use the find_missing.m script to estimate the missing parameters (specified by -999).
+
+The find_missing.m script can be used independently too. See the comments in the script for input/output specifications.
+
+
+Handling of missing parameters
+===============================
+
+These scripts needs at least five basic parameters; Moment magnitude, Joyner-Boore distance, Vs30, Style of faulting (rake angle) and hanging wall flag. Rest of the parameters used in the ground-motion models can be estimated using the framework described in Kaklamanos et al. (2011). 
 
 Authors
 ========
